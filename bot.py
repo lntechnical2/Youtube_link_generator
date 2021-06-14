@@ -31,8 +31,12 @@ async def yt(client,message):
 		link1 = linkfor1['url']
 		link2 = linkfor2['url']
 		link3 = linkfor3['url']
-
+		for f in formats:
+			url = f['url']
+		
 		await ms.edit(f"""
+		---------------------------
+		[URL]({url})
 		Links .................
 		[link1]({link1})
 		[link2]({link2})
