@@ -26,8 +26,8 @@ async def yt(client,message):
 		meta = ydl.extract_info(url, download=False) 
 		formats = meta.get('formats', [meta])
 		linkfor1 = formats[0]
-		linkfor2 = formats[0]
-		linkfor3 = formats[0]
+		linkfor2 = formats[1]
+		linkfor3 = formats[2]
 		link1 = linkfor1['url']
 		link2 = linkfor2['url']
 		link3 = linkfor3['url']
