@@ -3,7 +3,9 @@ import youtube_dl
 from pyrogram.types import (InlineKeyboardButton,  InlineKeyboardMarkup)
 import os
 
-
+TOKEN = os.environ.get("TOKEN", "")
+APP_ID = int(os.environ.get("APP_ID", "")) 
+API_HASH = os.environ.get("API_HASH", "")
 
 
 app = Client("ytlink",bot_token=TOKEN,
