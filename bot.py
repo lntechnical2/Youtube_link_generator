@@ -14,7 +14,7 @@ app = Client("ytlink",bot_token=TOKEN,
 
 @app.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
-	await message.reply_text(f"👋 Hello {message.from_user.first_name}\n\n Send me YouTube link and Get Direct Link\n\n 😢 Don't Forget to subscribe channel",reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Support 🙊',url = "https://t.me/lntechnical")]]))
+	await message.reply_text(f"👋 Hello {message.from_user.first_name}\n\n Get Link For voice chat From YouTube Send me YouTube link  😁\n\n 😢 Don't Forget to subscribe channel",reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Support 🙊',url = "https://t.me/lntechnical")]]))
 
 
 @app.on_message(filters.regex("^https?:\/\/?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/).{11}"))
@@ -31,6 +31,7 @@ async def yt(client,message):
 		link1 = linkfor1['url']
 		link2 = linkfor2['url']
 		link3 = linkfor3['url']
+
 		await ms.edit(f"""
 		Links .................
 		[link1]({link1})
